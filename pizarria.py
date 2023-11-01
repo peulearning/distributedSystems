@@ -1,6 +1,8 @@
 import time
 import threading
 
+# Laboratório 02-03
+
 
 def pizzaria(pizza, pedaco, thread_num):
     while pedaco < len(pizza):

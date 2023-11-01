@@ -3,21 +3,25 @@ import random
 import threading
 import time
 
+# Laboratório 02-02
+
+
 def run(id, posicoes):
     global fim
     while not fim:
         posicoes[id-1] += 1
         time.sleep(random.random())
 
+
 fim = 0
 threads = []
-posicoes = [0 for i in range (5)]
+posicoes = [0 for i in range(5)]
 
 for i in range(5):
-    t = threading.Thread(target=run, args=(i+1,posicoes))
+    t = threading.Thread(target=run, args=(i+1, posicoes))
     t.start()
 
-while max(posicoes)<78:
+while max(posicoes) < 78:
     time.sleep(0.1)
     os.system('clear')
     for n in posicoes:
