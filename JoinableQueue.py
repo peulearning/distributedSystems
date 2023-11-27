@@ -1,5 +1,6 @@
 import multiprocessing
 from queue import Queue
+import queue
 
 
 def is_primo(n):
