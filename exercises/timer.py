@@ -1,12 +1,9 @@
 import threading
 
-# Exemplo de sincronização Timer
-# Apresentar dia 01/11/2023
-
 
 def atravessar_rua(pedestre):
-    print(f"Pessoa {pedestre} inicia travessia !")
-    print(f"Pessoa {pedestre} conclui a travessia")
+    print(f"{pedestre} INICIOU travessia !")
+    print(f"{pedestre} FINALIZA travessia.")
 
 
 threads = []
@@ -19,4 +16,4 @@ for i in range(1, 4):
 for t in threads:
     t.join()
 
-print("Todas travessias CONCLUIDAS !")
+print(f"TODAS travessias CONCLUIDAS")
